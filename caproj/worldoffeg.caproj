@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>worldoffeg</name>
+    <description></description>
+    <version>1</version>
+    <author>ya</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1awv61s7uq13j</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
+        <plugin author="Toby R" id="Globals" version="1">Globals</plugin>
+        <plugin author="Yann Granjon" id="JSON" version="1">JSON</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="JohnnySheffield" id="nwk" version="1.100000024">Node-Webkit Gui</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Crop</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Mouse" sid="972196390042852">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="553541191678400">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="JSON" sid="742845426204069">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type name="NWjs" sid="306535326118233">
+            <plugin id="NodeWebkit" />
+        </object-type>
+        <object-type name="NodeWebkitGui" sid="213252868825091">
+            <plugin id="nwk" />
+        </object-type>
+        <object-type name="Browser" sid="736856183024090">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="WebSocket" sid="590645404309321">
+            <plugin id="C2WebSocket" />
+        </object-type>
+        <object-type global="1" name="Globals" sid="517017769913727">
+            <plugin id="Globals" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="0" />
+        <global-instance type="Keyboard" uid="1" />
+        <global-instance type="NWjs" uid="3" />
+        <global-instance type="NodeWebkitGui" uid="4" />
+        <global-instance type="Browser" uid="5" />
+        <global-instance type="WebSocket" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
