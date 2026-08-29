@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>loadingES</name>
+    <events>
+        <event-block sid="294551795052865">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="447008863996483" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="717565868183816" type="Loading">
+                    <param id="0" name="Width">1088*loadingprogress</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="768397580677661">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="510273495350006" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

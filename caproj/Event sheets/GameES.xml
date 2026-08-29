@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameES</name>
+    <events>
+        <event-block sid="305640390381486">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="765249048246218" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Connect" sid="313634548048432" type="WebSocket">
+                    <param id="0" name="URL">&quot;ws://localhost:8080&quot;</param>
+                    <param id="1" name="Protocol (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="464492395790514">
+            <conditions>
+                <condition id="3" name="On message" sid="929386791109190" type="WebSocket" />
+            </conditions>
+            <actions>
+                <action id="14" name="Log" sid="805224995224342" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">WebSocket.MessageText</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
