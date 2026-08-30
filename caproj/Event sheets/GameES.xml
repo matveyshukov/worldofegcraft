@@ -3,17 +3,32 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameES</name>
     <events>
+        <include>spriter</include>
+        <comment>регаем объекты жсон</comment>
         <event-block sid="305640390381486">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="765249048246218" type="System" />
             </conditions>
             <actions>
+                <action id="0" name="Set New Object" sid="313430789875190" type="mrecieve">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
+                </action>
+                <action id="0" name="Set New Object" sid="424644218472284" type="msend">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
+                </action>
+                <action id="0" name="Set New Object" sid="668654323674407" type="msession">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
+                </action>
                 <action id="0" name="Connect" sid="313634548048432" type="WebSocket">
                     <param id="0" name="URL">&quot;ws://localhost:8080&quot;</param>
                     <param id="1" name="Protocol (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
+        <comment>логи</comment>
         <event-block sid="464492395790514">
             <conditions>
                 <condition id="3" name="On message" sid="929386791109190" type="WebSocket" />
@@ -22,6 +37,90 @@
                 <action id="14" name="Log" sid="805224995224342" type="Browser">
                     <param id="0" name="Type">0</param>
                     <param id="1" name="Message">WebSocket.MessageText</param>
+                </action>
+                <action id="60" name="LoadJSON" sid="749832949399645" type="mrecieve">
+                    <param id="0" name="JSON">WebSocket.MessageText</param>
+                    <param id="1" name="Reference point">0</param>
+                    <param id="2" name="Key {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="120169823731818" type="multiplayer">
+                    <param id="0" name="Name">&quot;get&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>получаем данные от сервера</comment>
+        <event-block sid="626632575385911">
+            <conditions>
+                <condition id="0" name="On function" sid="500227600191947" type="multiplayer">
+                    <param id="0" name="Name">&quot;get&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="378055826199749">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="698677321162843" type="System">
+                            <param id="0" name="First value">mrecieve.Value(0, &quot;type&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;lobby&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="20" name="Set Value" sid="776431298590058" type="msend">
+                            <param id="0" name="Value">&quot;join&quot;</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;type&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="842510163543243" type="msend">
+                            <param id="0" name="Value">&quot;minecraft&quot;</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;room&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="222880430411102" type="multiplayer">
+                            <param id="0" name="Name">&quot;send&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="199763471287062">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="686100629553737" type="System">
+                            <param id="0" name="First value">mrecieve.Value(0, &quot;type&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;id&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="20" name="Set Value" sid="195057291584042" type="msession">
+                            <param id="0" name="Value">mrecieve.Value(0, &quot;id&quot;)</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;id&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="375396984530548">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="202174553452800" type="System">
+                            <param id="0" name="First value">mrecieve.Value(0, &quot;type&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;joined&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>отправляе данные сервера\</comment>
+        <event-block sid="188453419652853">
+            <conditions>
+                <condition id="0" name="On function" sid="844451735457671" type="multiplayer">
+                    <param id="0" name="Name">&quot;send&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Send text" sid="884315102961538" type="WebSocket">
+                    <param id="0" name="Data">msend.AsJson(0)</param>
                 </action>
             </actions>
         </event-block>

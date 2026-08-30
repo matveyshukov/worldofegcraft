@@ -29,9 +29,9 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Scml" uid="12">
+                <instance type="player" uid="12">
                     <properties>
-                        <scml-file></scml-file>
+                        <scml-file>player.scml</scml-file>
                         <starting-entity></starting-entity>
                         <starting-animation></starting-animation>
                         <starting-opacity>100</starting-opacity>
@@ -41,14 +41,335 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>709</x>
-                        <y>443</y>
+                        <x>540</x>
+                        <y>467</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>30</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0035_воротниксзади" uid="16">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-277</x>
+                        <y>-226</y>
+                        <z>0</z>
+                        <width>146</width>
+                        <height>76</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0034_Дефолт_тело" uid="17">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-324</x>
+                        <y>-339</y>
+                        <z>0</z>
+                        <width>246</width>
+                        <height>400</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0011_М_Бошка" uid="18">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-263</x>
+                        <y>-323</y>
+                        <z>0</z>
+                        <width>117</width>
+                        <height>137</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.002631664</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0004_Р_глаза" uid="19">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-244</x>
+                        <y>-264</y>
+                        <z>0</z>
+                        <width>72</width>
+                        <height>15</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.002631664</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0018_И_Волосы" uid="20">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-283</x>
+                        <y>-357</y>
+                        <z>0</z>
+                        <width>168</width>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.002631664</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0033_кистьправо" uid="21">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-118</x>
+                        <y>36</y>
+                        <z>0</z>
+                        <width>46</width>
+                        <height>55</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0032_рукаправо" uid="22">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-141</x>
+                        <y>-147</y>
+                        <z>0</z>
+                        <width>81</width>
+                        <height>206</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0031_кистлево" uid="23">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-344</x>
+                        <y>33</y>
+                        <z>0</z>
+                        <width>46</width>
+                        <height>53</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0030_рукалево" uid="24">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-351</x>
+                        <y>-139</y>
+                        <z>0</z>
+                        <width>76</width>
+                        <height>197</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0022_И_Нос" uid="25">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-225</x>
+                        <y>-261</y>
+                        <z>0</z>
+                        <width>33</width>
+                        <height>39</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.002631664</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0021_И_бровки" uid="26">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-249</x>
+                        <y>-277</y>
+                        <z>0</z>
+                        <width>88</width>
+                        <height>17</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.002631664</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0010_М_Рот" uid="27">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-217</x>
+                        <y>-217</y>
+                        <z>0</z>
+                        <width>19</width>
+                        <height>14</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0.002631664</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="player_entity_000_custom_char_0029_Воротник_перед" uid="28">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-274</x>
+                        <y>-212</y>
+                        <z>0</z>
+                        <width>141</width>
+                        <height>81</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>-0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>6000</acceleration>
+                                <deceleration>5000</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-115</x>
+                        <y>382</y>
+                        <z>0</z>
+                        <width>175</width>
+                        <height>72</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.625</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -58,7 +379,10 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="JSON" uid="11" />
+        <instance type="msend" uid="11" />
+        <instance type="mrecieve" uid="13" />
+        <instance type="multiplayer" uid="14" />
+        <instance type="msession" uid="15" />
     </nonworld-instances>
     <effects />
 </c2layout>

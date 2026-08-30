@@ -11,9 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">loading</layout>
-        <layout order="2">Game</layout>
+        <layout active="1" order="2">Game</layout>
+        <layout order="5">spritebank</layout>
         <event-sheet order="1">loadingES</event-sheet>
-        <event-sheet active="1" order="3">GameES</event-sheet>
+        <event-sheet order="3">GameES</event-sheet>
+        <event-sheet order="4">spriter</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -21,17 +23,35 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1" />
+    <families-expanded root="1">
+        <family expanded="0" name="playerFamily" />
+    </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/player sprites/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Spriter animations/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0035_воротниксзади/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0034_Дефолт_тело/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0011_М_Бошка/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0004_Р_глаза/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0018_И_Волосы/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0033_кистьправо/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0032_рукаправо/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0031_кистлево/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0030_рукалево/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0022_И_Нос/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0021_И_бровки/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0010_М_Рот/" />
+        <folder expanded="1" path="animation-folder/player_entity_000_custom_char_0029_Воротник_перед/" />
         <folder expanded="1" path="animation-folder/LoadingLogo/" />
         <folder expanded="1" path="animation-folder/LoadingBack/" />
-        <folder expanded="1" path="animation-folder/Scml/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
     </folders-expanded>
 </c2uistate>

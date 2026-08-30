@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>spriter</name>
+    <events>
+        <event-block sid="581579886787033">
+            <conditions>
+                <condition id="666" name="On initialised" sid="531437332154654" type="player" />
+            </conditions>
+            <actions>
+                <action id="666" name="Associate object type" sid="338637506353237" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0035_воротниксзади</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0035_воротник-сзади&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="692337799898052" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0034_Дефолт_тело</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0034_Дефолт_тело&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="422292209512440" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0011_М_Бошка</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0011_М_Бошка&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="476070003799320" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0004_Р_глаза</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0004_Р_глаза&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="927382347881293" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0018_И_Волосы</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0018_И_Волосы&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="126735467283851" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0033_кистьправо</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0033_кисть-право&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="849377557180900" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0032_рукаправо</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0032_рука-право&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="790268977088525" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0031_кистлево</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0031_кист-лево&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="231008506079496" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0030_рукалево</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0030_рука-лево&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="293840223073683" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0022_И_Нос</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0022_И_Нос&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="815942656120082" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0021_И_бровки</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0021_И_бровки&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="262011966770653" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0010_М_Рот</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0010_М_Рот&quot;</param>
+                </action>
+                <action id="666" name="Associate object type" sid="901286355103948" type="player">
+                    <param id="0" name="Object">player_entity_000_custom_char_0029_Воротник_перед</param>
+                    <param id="1" name="Name">&quot;entity_000_custom_char_0029_Воротник_перед&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

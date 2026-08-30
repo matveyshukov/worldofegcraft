@@ -15,7 +15,9 @@
         <plugin author="Toby R" id="Globals" version="1">Globals</plugin>
         <plugin author="Yann Granjon" id="JSON" version="1">JSON</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Chris Hackmann (aka linkman2004)" id="MagiCam" version="6.5">MagiCam</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scott A" id="Namespace" version="1">Namespace</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
@@ -24,6 +26,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -35,6 +38,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>loading</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -52,6 +56,452 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
+        <object-folder name="player sprites">
+            <object-type name="player_entity_000_custom_char_0035_воротниксзади" sid="409347166570257">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705238881411251" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0035_воротник-сзади.png">
+                            <collision-poly>
+                                <point x="0.0890411" y="0.171053" />
+                                <point x="0.5" y="0.0131579" />
+                                <point x="0.910959" y="0.171053" />
+                                <point x="0.972603" y="0.5" />
+                                <point x="0.952055" y="0.907895" />
+                                <point x="0.5" y="0.934211" />
+                                <point x="0.116438" y="0.776316" />
+                                <point x="0.0684932" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0034_Дефолт_тело" sid="688733006399352">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278307001516136" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0034_Дефолт_тело.png">
+                            <collision-poly>
+                                <point x="0.504065" y="0.31" />
+                                <point x="0.495935" y="0.31" />
+                                <point x="0.963415" y="0.5" />
+                                <point x="0.756098" y="0.85" />
+                                <point x="0.5" y="1" />
+                                <point x="0.154472" y="0.905" />
+                                <point x="0.0731707" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0011_М_Бошка" sid="355668726093739">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="963538305947323" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0011_М_Бошка.png">
+                            <collision-poly>
+                                <point x="0.128205" y="0.109489" />
+                                <point x="0.495726" y="0" />
+                                <point x="0.871795" y="0.109489" />
+                                <point x="0.982906" y="0.49635" />
+                                <point x="0.82906" y="0.854015" />
+                                <point x="0.495726" y="1" />
+                                <point x="0.17094" y="0.854015" />
+                                <point x="0" y="0.49635" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0004_Р_глаза" sid="113143717924808">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829158969694516" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0004_Р_глаза.png">
+                            <collision-poly>
+                                <point x="0.0555556" y="0.266667" />
+                                <point x="0.944444" y="0.266667" />
+                                <point x="1" y="0.466667" />
+                                <point x="0.958333" y="0.8" />
+                                <point x="0.0277778" y="0.866667" />
+                                <point x="0" y="0.466667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0018_И_Волосы" sid="415315116838041">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982851785520154" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0018_И_Волосы.png">
+                            <collision-poly>
+                                <point x="0.119048" y="0.133333" />
+                                <point x="0.5" y="0.00666667" />
+                                <point x="0.85119" y="0.166667" />
+                                <point x="0.916667" y="0.5" />
+                                <point x="0.892857" y="0.88" />
+                                <point x="0.5" y="0.406667" />
+                                <point x="0.52381" y="0.413333" />
+                                <point x="0.0178571" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0033_кистьправо" sid="286152200686211">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978975569950109" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0033_кисть-право.png">
+                            <collision-poly>
+                                <point x="0.130435" y="0.109091" />
+                                <point x="0.5" y="0.0363636" />
+                                <point x="0.826087" y="0.145455" />
+                                <point x="0.978261" y="0.490909" />
+                                <point x="0.782609" y="0.818182" />
+                                <point x="0.5" y="0.927273" />
+                                <point x="0.130435" y="0.890909" />
+                                <point x="0.152174" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0032_рукаправо" sid="461443363835812">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914222840593513" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0032_рука-право.png">
+                            <collision-poly>
+                                <point x="0.222222" y="0.0873786" />
+                                <point x="0.493827" y="0.0145631" />
+                                <point x="0.777778" y="0.0873786" />
+                                <point x="0.950617" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.493827" y="0.970874" />
+                                <point x="0.0123457" y="0.995146" />
+                                <point x="0.0987654" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0031_кистлево" sid="843165292713512">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424985368299053" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0031_кист-лево.png">
+                            <collision-poly>
+                                <point x="0.23913" y="0.207547" />
+                                <point x="0.5" y="0.113208" />
+                                <point x="0.891304" y="0.0943396" />
+                                <point x="0.934783" y="0.490566" />
+                                <point x="0.804348" y="0.830189" />
+                                <point x="0.5" y="0.962264" />
+                                <point x="0.173913" y="0.849057" />
+                                <point x="0.0434783" y="0.490566" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0030_рукалево" sid="609255317676910">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810582575443633" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0030_рука-лево.png">
+                            <collision-poly>
+                                <point x="0.302632" y="0.116751" />
+                                <point x="0.5" y="0.0253807" />
+                                <point x="0.868421" y="0.0507614" />
+                                <point x="0.881579" y="0.497462" />
+                                <point x="0.842105" y="0.939086" />
+                                <point x="0.5" y="0.974619" />
+                                <point x="0.0131579" y="0.994924" />
+                                <point x="0.0657895" y="0.497462" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0022_И_Нос" sid="636409869489599">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="217547481195109" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0022_И_Нос.png">
+                            <collision-poly>
+                                <point x="0.909091" y="0.769231" />
+                                <point x="0.484848" y="0.025641" />
+                                <point x="0.454545" y="0.461538" />
+                                <point x="0.818182" y="0.846154" />
+                                <point x="0.484848" y="0.974359" />
+                                <point x="0.121212" y="0.897436" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0021_И_бровки" sid="336267866800273">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303418824492275" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0021_И_бровки.png">
+                            <collision-poly>
+                                <point x="0.0340909" y="0.176471" />
+                                <point x="0.954545" y="0.235294" />
+                                <point x="0.909091" y="0.529412" />
+                                <point x="0.102273" y="0.470588" />
+                                <point x="0.102273" y="0.470588" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0010_М_Рот" sid="436355910496581">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205587258289782" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0010_М_Рот.png">
+                            <collision-poly>
+                                <point x="0.263158" y="0.357143" />
+                                <point x="0.736842" y="0.357143" />
+                                <point x="0.947368" y="0.5" />
+                                <point x="0.578947" y="0.428571" />
+                                <point x="0.421053" y="0.428571" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="player_entity_000_custom_char_0029_Воротник_перед" sid="571148896524077">
+                <plugin id="Sprite" />
+                <container>
+                    <type>player</type>
+                    <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                    <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                    <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                    <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                    <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                    <type>player_entity_000_custom_char_0033_кистьправо</type>
+                    <type>player_entity_000_custom_char_0032_рукаправо</type>
+                    <type>player_entity_000_custom_char_0031_кистлево</type>
+                    <type>player_entity_000_custom_char_0030_рукалево</type>
+                    <type>player_entity_000_custom_char_0022_И_Нос</type>
+                    <type>player_entity_000_custom_char_0021_И_бровки</type>
+                    <type>player_entity_000_custom_char_0010_М_Рот</type>
+                    <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318910902229873" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\РЕПОЗИТОРИИ\worldofegcraft\sprites\player\custom_char_0029_Воротник_перед.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.496454" y="0.740741" />
+                                <point x="0.858156" y="0.246914" />
+                                <point x="0.907801" y="0.493827" />
+                                <point x="0.851064" y="0.740741" />
+                                <point x="0.496454" y="0.925926" />
+                                <point x="0.156028" y="0.728395" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Mouse" sid="972196390042852">
             <plugin id="Mouse" />
         </object-type>
@@ -115,26 +565,87 @@
             </behaviors>
             <texture />
         </object-type>
-        <object-type global="1" name="JSON" sid="457785703919299">
+        <object-type global="1" name="msend" sid="457785703919299">
             <plugin id="JSON" />
         </object-type>
-        <object-type name="Scml" sid="978151353268166">
+        <object-type global="1" name="mrecieve" sid="536525908836410">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type global="1" name="multiplayer" sid="974064640336101">
+            <plugin id="Namespace" />
+        </object-type>
+        <object-type global="1" name="msession" sid="601568816070255">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type name="player" sid="437913950072552">
             <plugin id="Spriter" />
+            <container>
+                <type>player</type>
+                <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                <type>player_entity_000_custom_char_0033_кистьправо</type>
+                <type>player_entity_000_custom_char_0032_рукаправо</type>
+                <type>player_entity_000_custom_char_0031_кистлево</type>
+                <type>player_entity_000_custom_char_0030_рукалево</type>
+                <type>player_entity_000_custom_char_0022_И_Нос</type>
+                <type>player_entity_000_custom_char_0021_И_бровки</type>
+                <type>player_entity_000_custom_char_0010_М_Рот</type>
+                <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+            </container>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666698126126146" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980024861025241" speed="5">
+                    <frame duration="1" hotspotX="1.57471" hotspotY="2.72464" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MagiCam" sid="989507215755785">
+            <plugin id="MagiCam" />
+        </object-type>
+        <object-type name="Sprite" sid="262408152824373">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="889288187900792">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330686068121064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.625" />
                 </animation>
             </animation-folder>
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="playerFamily" plugin-id="Sprite" sid="590954387087100">
+            <members>
+                <member>player_entity_000_custom_char_0004_Р_глаза</member>
+                <member>player_entity_000_custom_char_0010_М_Рот</member>
+                <member>player_entity_000_custom_char_0011_М_Бошка</member>
+                <member>player_entity_000_custom_char_0018_И_Волосы</member>
+                <member>player_entity_000_custom_char_0021_И_бровки</member>
+                <member>player_entity_000_custom_char_0022_И_Нос</member>
+                <member>player_entity_000_custom_char_0029_Воротник_перед</member>
+                <member>player_entity_000_custom_char_0030_рукалево</member>
+                <member>player_entity_000_custom_char_0031_кистлево</member>
+                <member>player_entity_000_custom_char_0032_рукаправо</member>
+                <member>player_entity_000_custom_char_0033_кистьправо</member>
+                <member>player_entity_000_custom_char_0034_Дефолт_тело</member>
+                <member>player_entity_000_custom_char_0035_воротниксзади</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>loading.xml</layout>
         <layout>Game.xml</layout>
+        <layout>spritebank.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>loadingES.xml</event-sheet>
         <event-sheet>GameES.xml</event-sheet>
+        <event-sheet>spriter.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="0" />
@@ -143,6 +654,7 @@
         <global-instance type="NodeWebkitGui" uid="4" />
         <global-instance type="Browser" uid="5" />
         <global-instance type="WebSocket" uid="6" />
+        <global-instance type="MagiCam" uid="29" />
     </global-instances>
     <sounds-folder />
     <music-folder />
@@ -154,6 +666,10 @@
             <file name="icon-128.png" />
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="Spriter animations">
+            <file name="player.scml" />
+            <file name="player.scon" />
         </file-folder>
     </files-folder>
 </c2project>
