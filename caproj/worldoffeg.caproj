@@ -11,6 +11,7 @@
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
         <plugin author="Toby R" id="Globals" version="1">Globals</plugin>
         <plugin author="Yann Granjon" id="JSON" version="1">JSON</plugin>
@@ -19,6 +20,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scott A" id="Namespace" version="1">Namespace</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Comment" version="0.100000001">Comments</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -27,6 +29,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -74,6 +77,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705238881411251" speed="0">
@@ -109,6 +113,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278307001516136" speed="0">
@@ -143,6 +148,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="963538305947323" speed="0">
@@ -178,6 +184,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829158969694516" speed="0">
@@ -211,6 +218,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982851785520154" speed="0">
@@ -246,6 +254,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978975569950109" speed="0">
@@ -281,6 +290,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914222840593513" speed="0">
@@ -316,6 +326,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424985368299053" speed="0">
@@ -351,6 +362,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810582575443633" speed="0">
@@ -386,6 +398,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="217547481195109" speed="0">
@@ -419,6 +432,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303418824492275" speed="0">
@@ -451,6 +465,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205587258289782" speed="0">
@@ -484,6 +499,7 @@
                     <type>player_entity_000_custom_char_0021_И_бровки</type>
                     <type>player_entity_000_custom_char_0010_М_Рот</type>
                     <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                    <type>character</type>
                 </container>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318910902229873" speed="0">
@@ -528,6 +544,7 @@
             <instance-variables>
                 <instance-variable name="ip" sid="887008005033429" type="string" />
                 <instance-variable name="port" sid="691349057786153" type="string" />
+                <instance-variable name="IP2" sid="927797918871004" type="string" />
             </instance-variables>
         </object-type>
         <object-type name="LoadingLogo" sid="358799474717931">
@@ -594,6 +611,7 @@
                 <type>player_entity_000_custom_char_0021_И_бровки</type>
                 <type>player_entity_000_custom_char_0010_М_Рот</type>
                 <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                <type>character</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980024861025241" speed="5">
@@ -604,18 +622,53 @@
         <object-type name="MagiCam" sid="989507215755785">
             <plugin id="MagiCam" />
         </object-type>
-        <object-type name="Sprite" sid="262408152824373">
+        <object-type name="character" sid="262408152824373">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="id" sid="323626899339893" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="889288187900792">
                     <behavior id="EightDir" />
                 </behavior-type>
+                <behavior-type name="LiteTween" sid="128727490484401">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
             </behaviors>
+            <container>
+                <type>player</type>
+                <type>player_entity_000_custom_char_0035_воротниксзади</type>
+                <type>player_entity_000_custom_char_0034_Дефолт_тело</type>
+                <type>player_entity_000_custom_char_0011_М_Бошка</type>
+                <type>player_entity_000_custom_char_0004_Р_глаза</type>
+                <type>player_entity_000_custom_char_0018_И_Волосы</type>
+                <type>player_entity_000_custom_char_0033_кистьправо</type>
+                <type>player_entity_000_custom_char_0032_рукаправо</type>
+                <type>player_entity_000_custom_char_0031_кистлево</type>
+                <type>player_entity_000_custom_char_0030_рукалево</type>
+                <type>player_entity_000_custom_char_0022_И_Нос</type>
+                <type>player_entity_000_custom_char_0021_И_бровки</type>
+                <type>player_entity_000_custom_char_0010_М_Рот</type>
+                <type>player_entity_000_custom_char_0029_Воротник_перед</type>
+                <type>character</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330686068121064" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.625" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type global="1" name="characterstats" sid="865693329378695">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type name="Button" sid="753711468521000">
+            <plugin id="Button" />
+        </object-type>
+        <object-type global="1" name="mjson" sid="117484081957485">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type name="Comments" sid="631839534035415">
+            <plugin id="Rex_Comment" />
         </object-type>
     </object-folder>
     <families>
@@ -655,6 +708,7 @@
         <global-instance type="Browser" uid="5" />
         <global-instance type="WebSocket" uid="6" />
         <global-instance type="MagiCam" uid="29" />
+        <global-instance type="Comments" uid="34" />
     </global-instances>
     <sounds-folder />
     <music-folder />

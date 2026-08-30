@@ -134,8 +134,9 @@
         <instance type="auth" uid="2" />
         <instance type="Globals" uid="7">
             <instance-variables>
-                <ip></ip>
-                <port></port>
+                <ip>localhost</ip>
+                <port>8080</port>
+                <IP2>31.57.92.157</IP2>
             </instance-variables>
         </instance>
     </nonworld-instances>
