@@ -28,6 +28,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
     </used-behaviors>
@@ -54,7 +55,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">NW.js</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -626,6 +627,8 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="id" sid="323626899339893" type="number" />
+                <instance-variable name="inVehicle" sid="472810560185507" type="boolean" />
+                <instance-variable name="hideBody" sid="985000612385017" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="889288187900792">
@@ -669,6 +672,32 @@
         </object-type>
         <object-type name="Comments" sid="631839534035415">
             <plugin id="Rex_Comment" />
+        </object-type>
+        <object-type name="Sprite" sid="249996013172688">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="148907262492986" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Car" sid="451195120227960">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="949349945783412" type="number" />
+                <instance-variable name="DriverID" sid="478530142645789" type="number" />
+                <instance-variable name="hidingInVehicle" sid="398221379665076" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Car" sid="589507193646181">
+                    <behavior id="Car" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451144102732009" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
