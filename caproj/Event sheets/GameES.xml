@@ -299,6 +299,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Car" id="8" name="Set enabled" sid="649592889705648" type="Car">
+                            <param id="0" name="State">1</param>
+                        </action>
                         <action id="-4" name="Set position to another object" sid="393182469441607" type="character">
                             <param id="0" name="Object">Car</param>
                             <param id="1" name="Image point (optional)">0</param>
@@ -351,7 +354,7 @@
                                 <action behavior="Car" id="7" name="Simulate control" sid="721770937883332" type="Car">
                                     <param id="0" name="Control">2</param>
                                 </action>
-                                <action behavior="Car" id="5" name="Set acceleration" sid="981815636747271" type="Car">
+                                <action behavior="Car" disabled="1" id="5" name="Set acceleration" sid="981815636747271" type="Car">
                                     <param id="0" name="Acceleration">abs(Car.Car.Acceleration)</param>
                                 </action>
                             </actions>
@@ -362,7 +365,11 @@
                     <conditions>
                         <condition id="-22" name="Else" sid="531270002872635" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action behavior="Car" id="8" name="Set enabled" sid="655321718086028" type="Car">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="347611189261200">
                             <conditions>
@@ -422,44 +429,54 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="118751801069537">
+                        <event-block sid="223729780050596">
                             <conditions>
-                                <condition id="0" name="On key pressed" sid="169986920611025" type="Keyboard">
-                                    <param id="0" name="Key">69</param>
+                                <condition id="-16" name="Pick random instance" sid="903341730749924" type="System">
+                                    <param id="0" name="Object">Car</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="551472082773185">
+                                <event-block sid="118751801069537">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="488487737005133" type="Car">
-                                            <param id="0" name="Instance variable">DriverID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">-1</param>
+                                        <condition id="0" name="On key pressed" sid="169986920611025" type="Keyboard">
+                                            <param id="0" name="Key">69</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Set value" sid="913388622332260" type="Car">
-                                            <param id="0" name="Instance variable">DriverID</param>
-                                            <param id="1" name="Value">character.id</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="530983897118255">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="208155330223882" type="System" />
-                                        <condition id="-7" name="Compare instance variable" sid="329428257989357" type="Car">
-                                            <param id="0" name="Instance variable">DriverID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">msession.Value(0,&quot;id&quot;)</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Set value" sid="829451989380565" type="Car">
-                                            <param id="0" name="Instance variable">DriverID</param>
-                                            <param id="1" name="Value">-1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="551472082773185">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="488487737005133" type="Car">
+                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">-1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="913388622332260" type="Car">
+                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                    <param id="1" name="Value">character.id</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="530983897118255">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="208155330223882" type="System" />
+                                                <condition id="-7" name="Compare instance variable" sid="329428257989357" type="Car">
+                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">msession.Value(0,&quot;id&quot;)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="829451989380565" type="Car">
+                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -522,26 +539,26 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="838175488733647">
-                            <conditions />
-                            <actions>
-                                <action id="20" name="Set Value" sid="644274501321662" type="msend">
-                                    <param id="0" name="Value">&quot;toother&quot;</param>
-                                    <param id="1" name="Reference point">0</param>
-                                    <param id="2" name="Key {n}">&quot;type&quot;</param>
-                                </action>
-                                <action id="20" name="Set Value" sid="828131206669771" type="msend">
-                                    <param id="0" name="Value">str(characterstats.AsJson(0))</param>
-                                    <param id="1" name="Reference point">0</param>
-                                    <param id="2" name="Key {n}">&quot;content&quot;</param>
-                                </action>
-                                <action id="0" name="Call function" sid="857668879974983" type="multiplayer">
-                                    <param id="0" name="Name">&quot;send&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="838175488733647">
+                    <conditions />
+                    <actions>
+                        <action id="20" name="Set Value" sid="644274501321662" type="msend">
+                            <param id="0" name="Value">&quot;toother&quot;</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;type&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="828131206669771" type="msend">
+                            <param id="0" name="Value">str(characterstats.AsJson(0))</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;content&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="857668879974983" type="multiplayer">
+                            <param id="0" name="Name">&quot;send&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>

@@ -694,6 +694,9 @@
                 <behavior-type name="Car" sid="589507193646181">
                     <behavior id="Car" />
                 </behavior-type>
+                <behavior-type name="LiteTween" sid="473700105248407">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451144102732009" speed="5">
