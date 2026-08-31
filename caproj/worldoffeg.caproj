@@ -21,6 +21,7 @@
         <plugin author="Scott A" id="Namespace" version="1">Namespace</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Comment" version="0.100000001">Comments</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Nickname" version="0.100000001">Nickname</plugin>
         <plugin author="Rex.Rainbow" id="Rex_TimeLine" version="1">TimeLine</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
@@ -686,7 +687,6 @@
         <object-type name="Car" sid="451195120227960">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="ID" sid="949349945783412" type="number" />
                 <instance-variable name="DriverID" sid="478530142645789" type="number" />
                 <instance-variable name="hidingInVehicle" sid="398221379665076" type="boolean" />
             </instance-variables>
@@ -720,6 +720,9 @@
         <object-type global="1" name="TimeLine" sid="548412564271932">
             <plugin id="Rex_TimeLine" />
         </object-type>
+        <object-type name="Nickname" sid="454683948221436">
+            <plugin id="Rex_Nickname" />
+        </object-type>
     </object-folder>
     <families>
         <family name="playerFamily" plugin-id="Sprite" sid="590954387087100">
@@ -738,6 +741,16 @@
                 <member>player_entity_000_custom_char_0034_Дефолт_тело</member>
                 <member>player_entity_000_custom_char_0035_воротниксзади</member>
             </members>
+        </family>
+        <family name="syncObjects" plugin-id="Sprite" sid="701119695333813">
+            <members>
+                <member>Car</member>
+                <member>Sprite</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="ID" sid="867094069814937" type="number" />
+                <instance-variable name="NameOfType" sid="868231142431328" type="string" />
+            </instance-variables>
         </family>
     </families>
     <layout-folder>
@@ -759,6 +772,7 @@
         <global-instance type="WebSocket" uid="6" />
         <global-instance type="MagiCam" uid="29" />
         <global-instance type="Comments" uid="34" />
+        <global-instance type="Nickname" uid="36" />
     </global-instances>
     <sounds-folder />
     <music-folder />

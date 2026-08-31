@@ -213,13 +213,7 @@
                                     </actions>
                                     <sub-events>
                                         <event-block sid="299519077523208">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="193819299020731" type="Car">
-                                                    <param id="0" name="Instance variable">ID</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">mjson.Value(0,&quot;vehicleID&quot;)</param>
-                                                </condition>
-                                            </conditions>
+                                            <conditions />
                                             <actions>
                                                 <action id="-4" name="Set position to another object" sid="575835875537121" type="Car">
                                                     <param id="0" name="Object">character</param>
@@ -532,7 +526,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="20" name="Set Value" sid="111666105639592" type="characterstats">
+                                <action id="20" name="Set Value" sid="293410543897230" type="characterstats">
                                     <param id="0" name="Value">Car.ID</param>
                                     <param id="1" name="Reference point">0</param>
                                     <param id="2" name="Key {n}">&quot;vehicleID&quot;</param>
@@ -561,6 +555,30 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="747973131836183">
+            <conditions>
+                <condition id="-18" name="On created" sid="196886083140310" type="syncObjects" />
+            </conditions>
+            <actions>
+                <action id="1" name="Assign nickname" sid="838701068436760" type="Nickname">
+                    <param id="0" name="Nickname">syncObjects.NameOfType</param>
+                    <param id="1" name="Object">syncObjects</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="966165373915576">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="768895496226411" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Create instance" sid="299229094569857" type="Nickname">
+                    <param id="0" name="Nickname">&quot;Table&quot;</param>
+                    <param id="1" name="X">500</param>
+                    <param id="2" name="Y">500</param>
+                    <param id="3" name="Layer">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

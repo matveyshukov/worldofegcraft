@@ -440,11 +440,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                        <NameOfType>Table</NameOfType>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>790</x>
-                        <y>322</y>
+                        <x>213</x>
+                        <y>352</y>
                         <z>0</z>
                         <width>194.098419189</width>
                         <height>240.682037354</height>
@@ -493,6 +497,7 @@
                     </properties>
                     <instance-variables>
                         <ID>0</ID>
+                        <NameOfType>Car</NameOfType>
                         <DriverID>-1</DriverID>
                         <hidingInVehicle>true</hidingInVehicle>
                     </instance-variables>
@@ -538,6 +543,24 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
+        </layer>
+        <layer name="cheatMenu" sid="766924078450527">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
             <effects />
         </layer>
     </layers>
