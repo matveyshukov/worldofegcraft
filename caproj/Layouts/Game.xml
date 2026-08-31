@@ -497,6 +497,35 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="systemm" uid="37">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Timer">
+                            <properties>
+                                <sync-timescale>Yes</sync-timescale>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>95</x>
+                        <y>-196</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -508,6 +537,11 @@
         <instance type="msession" uid="15" />
         <instance type="characterstats" uid="31" />
         <instance type="mjson" uid="33" />
+        <instance type="TimeLine" uid="38">
+            <properties>
+                <game-time>Yes</game-time>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>
