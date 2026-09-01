@@ -139,6 +139,9 @@
                 <IP2>31.57.92.157</IP2>
             </instance-variables>
         </instance>
+        <instance type="contentJSON" uid="36" />
+        <instance type="syncobjectsJSON" uid="41" />
+        <instance type="JSON" uid="42" />
     </nonworld-instances>
     <effects />
 </c2layout>

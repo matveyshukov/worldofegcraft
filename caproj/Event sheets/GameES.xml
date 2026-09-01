@@ -26,9 +26,17 @@
                     <param id="0" name="Reference point">0</param>
                     <param id="1" name="Key {n}"></param>
                 </action>
+                <action id="10" name="Set New Array" sid="316010792122439" type="contentJSON">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
+                </action>
                 <action id="0" name="Connect" sid="313634548048432" type="WebSocket">
                     <param id="0" name="URL">&quot;ws://&quot;&amp; Globals.ip&amp;&quot;:&quot;&amp;Globals.port</param>
                     <param id="1" name="Protocol (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set New Object" sid="218481562099897" type="syncobjectsJSON">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
                 </action>
             </actions>
         </event-block>
@@ -173,53 +181,158 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="378108059035610">
+                        <event-block sid="289534107912495">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="606836284542225" type="System">
-                                    <param id="0" name="First value">mjson.Value(0, &quot;type&quot;)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">1</param>
+                                <condition id="100" name="For each property" sid="882140399806572" type="mjson">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}"></param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="60" name="LoadJSON" sid="927291641587435" type="JSON">
+                                    <param id="0" name="JSON">mjson.CurrentValue</param>
+                                    <param id="1" name="Reference point">0</param>
+                                    <param id="2" name="Key {n}"></param>
+                                </action>
+                            </actions>
                             <sub-events>
-                                <event-block sid="339133512456424">
+                                <event-block sid="259936281682910">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="732683720299409" type="character">
-                                            <param id="0" name="Instance variable">id</param>
+                                        <condition id="-8" name="Compare two values" sid="729708479522457" type="System">
+                                            <param id="0" name="First value">JSON.Value(0, &quot;type&quot;)</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">mrecieve.Value(0, &quot;from&quot;)</param>
+                                            <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action disabled="1" id="-3" name="Set position" sid="224175935962535" type="character">
-                                            <param id="0" name="X">mjson.Value(0, &quot;x&quot;)</param>
-                                            <param id="1" name="Y">mjson.Value(0, &quot;y&quot;)</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="3" name="Set target" sid="799906616858957" type="character">
-                                            <param id="0" name="Target is">0</param>
-                                            <param id="1" name="Relativity">0</param>
-                                            <param id="2" name="Value">mjson.Value(0, &quot;x&quot;)</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="3" name="Set target" sid="912244959755345" type="character">
-                                            <param id="0" name="Target is">1</param>
-                                            <param id="1" name="Relativity">0</param>
-                                            <param id="2" name="Value">mjson.Value(0, &quot;y&quot;)</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="10" name="Start" sid="816736101871489" type="character">
-                                            <param id="0" name="Start Mode">0</param>
-                                            <param id="1" name="Force use current">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
-                                        <event-block sid="299519077523208">
-                                            <conditions />
+                                        <event-block sid="215487168179190">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="784471499823626" type="character">
+                                                    <param id="0" name="Instance variable">id</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">mrecieve.Value(0, &quot;from&quot;)</param>
+                                                </condition>
+                                            </conditions>
                                             <actions>
-                                                <action id="-4" name="Set position to another object" sid="575835875537121" type="Car">
-                                                    <param id="0" name="Object">character</param>
-                                                    <param id="1" name="Image point (optional)">0</param>
+                                                <action disabled="1" id="-3" name="Set position" sid="788612897540710" type="character">
+                                                    <param id="0" name="X">mjson.Value(0, &quot;x&quot;)</param>
+                                                    <param id="1" name="Y">mjson.Value(0, &quot;y&quot;)</param>
+                                                </action>
+                                                <action behavior="LiteTween" disabled="1" id="3" name="Set target" sid="353747244600162" type="character">
+                                                    <param id="0" name="Target is">0</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">mjson.Value(0, &quot;x&quot;)</param>
+                                                </action>
+                                                <action behavior="LiteTween" disabled="1" id="3" name="Set target" sid="945454425026683" type="character">
+                                                    <param id="0" name="Target is">1</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">mjson.Value(0, &quot;y&quot;)</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="257347347034680" type="character">
+                                                    <param id="0" name="Target is">0</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">JSON.Value(0, &quot;x&quot;)</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="3" name="Set target" sid="265282944485660" type="character">
+                                                    <param id="0" name="Target is">1</param>
+                                                    <param id="1" name="Relativity">0</param>
+                                                    <param id="2" name="Value">JSON.Value(0, &quot;y&quot;)</param>
+                                                </action>
+                                                <action behavior="LiteTween" id="10" name="Start" sid="918599018101794" type="character">
+                                                    <param id="0" name="Start Mode">0</param>
+                                                    <param id="1" name="Force use current">0</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block disabled="1" sid="300580984446061">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="962291286172411" type="Car">
+                                                            <param id="0" name="Instance variable">ID</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">JSON.Value(0, &quot;vehicleID&quot;)</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-4" name="Set position to another object" sid="145867268997063" type="Car">
+                                                            <param id="0" name="Object">character</param>
+                                                            <param id="1" name="Image point (optional)">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="378108059035610">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="606836284542225" type="System">
+                                            <param id="0" name="First value">JSON.Value(0, &quot;type&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="547379180146422">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="515849226896902" type="System">
+                                                    <param id="0" name="First value">JSON.Value(0, &quot;InteractorID&quot;)</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">msession.Value(0,&quot;id&quot;)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="339133512456424">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="396012890974047" type="syncObjects">
+                                                            <param id="0" name="Instance variable">ID</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">JSON.Value(0, &quot;ID&quot;)</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action disabled="1" id="-3" name="Set position" sid="224175935962535" type="character">
+                                                            <param id="0" name="X">mjson.Value(0, &quot;x&quot;)</param>
+                                                            <param id="1" name="Y">mjson.Value(0, &quot;y&quot;)</param>
+                                                        </action>
+                                                        <action behavior="LiteTween" disabled="1" id="3" name="Set target" sid="799906616858957" type="character">
+                                                            <param id="0" name="Target is">0</param>
+                                                            <param id="1" name="Relativity">0</param>
+                                                            <param id="2" name="Value">mjson.Value(0, &quot;x&quot;)</param>
+                                                        </action>
+                                                        <action behavior="LiteTween" disabled="1" id="3" name="Set target" sid="912244959755345" type="character">
+                                                            <param id="0" name="Target is">1</param>
+                                                            <param id="1" name="Relativity">0</param>
+                                                            <param id="2" name="Value">mjson.Value(0, &quot;y&quot;)</param>
+                                                        </action>
+                                                        <action behavior="LiteTween_POS" id="3" name="Set target" sid="527812019578071" type="syncObjects">
+                                                            <param id="0" name="Target is">0</param>
+                                                            <param id="1" name="Relativity">0</param>
+                                                            <param id="2" name="Value">JSON.Value(0, &quot;x&quot;)</param>
+                                                        </action>
+                                                        <action behavior="LiteTween_POS" id="3" name="Set target" sid="163066949907751" type="syncObjects">
+                                                            <param id="0" name="Target is">1</param>
+                                                            <param id="1" name="Relativity">0</param>
+                                                            <param id="2" name="Value">JSON.Value(0, &quot;y&quot;)</param>
+                                                        </action>
+                                                        <action behavior="LiteTween_ANGLE" id="3" name="Set target" sid="728295592253413" type="syncObjects">
+                                                            <param id="0" name="Target is">2</param>
+                                                            <param id="1" name="Relativity">0</param>
+                                                            <param id="2" name="Value">JSON.Value(0, &quot;angle&quot;)</param>
+                                                        </action>
+                                                        <action behavior="LiteTween_POS" id="10" name="Start" sid="816736101871489" type="syncObjects">
+                                                            <param id="0" name="Start Mode">0</param>
+                                                            <param id="1" name="Force use current">0</param>
+                                                        </action>
+                                                        <action behavior="LiteTween_ANGLE" id="10" name="Start" sid="211390154780751" type="syncObjects">
+                                                            <param id="0" name="Start Mode">0</param>
+                                                            <param id="1" name="Force use current">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -258,8 +371,16 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="2" name="Send text" sid="884315102961538" type="WebSocket">
+                <action id="14" name="Log" sid="622232734807774" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">msend.AsJson(0)</param>
+                </action>
+                <action id="2" name="Send text" sid="550883524772372" type="WebSocket">
                     <param id="0" name="Data">msend.AsJson(0)</param>
+                </action>
+                <action id="55" name="Clear" sid="894998126323589" type="contentJSON">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
                 </action>
             </actions>
         </event-block>
@@ -271,6 +392,16 @@
                 <action id="-3" name="Set position" sid="767412651001686" type="player">
                     <param id="0" name="X">character.X</param>
                     <param id="1" name="Y">character.Y</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="101466221029851" type="car_">
+                    <param id="0" name="Object">Car</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="1" name="Add comment" sid="313949954643510" type="Comments">
+                    <param id="0" name="Comment">&quot;Тут формула ебанутая достаточно но по факту ничег сложного, я сделал так чтобы градус был в диапозоне 0;360 а не -180;180 например. Карче чтобы потом подобрать соответсвующий кадр анимации. Умножение на минус единицу происходит потому что я еблан и в обратном порядке зарендерил.&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="714398455321929" type="car_">
+                    <param id="0" name="Frame number">floor(((Car.Angle*(-1)  -90+ 3600)%360)/(360/car_.AnimationFrameCount))</param>
                 </action>
             </actions>
         </event-block>
@@ -287,7 +418,7 @@
                 <event-block sid="687432219296566">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="967844561218772" type="Car">
-                            <param id="0" name="Instance variable">DriverID</param>
+                            <param id="0" name="Instance variable">InteractorID</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">character.id</param>
                         </condition>
@@ -348,20 +479,57 @@
                                 <action behavior="Car" id="7" name="Simulate control" sid="721770937883332" type="Car">
                                     <param id="0" name="Control">2</param>
                                 </action>
-                                <action behavior="Car" disabled="1" id="5" name="Set acceleration" sid="981815636747271" type="Car">
-                                    <param id="0" name="Acceleration">abs(Car.Car.Acceleration)</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="448877020283725">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="380128603284165" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="506518095032913" type="character">
+                                    <param id="0" name="Instance variable">inVehicle</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="165717344473641">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="245251108842107" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Car" id="8" name="Set enabled" sid="629363594464438" type="Car">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="667445509142499">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="443242385872737" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="280677446491014" type="character">
+                                    <param id="0" name="Instance variable">inVehicle</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Я хуй знает как лучше сделать, если хочш сделай чтоб было красивше и удобна&#x0D;&#x0A;Я тут ещё добавил чтобы перс исчезал когда мы в машине</comment>
                 <event-block sid="727258875526040">
                     <conditions>
-                        <condition id="-22" name="Else" sid="531270002872635" type="System" />
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="675723663006335" type="character">
+                            <param id="0" name="Instance variable">inVehicle</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="Car" id="8" name="Set enabled" sid="655321718086028" type="Car">
                             <param id="0" name="State">0</param>
+                        </action>
+                        <action id="16" name="Set Visible" sid="322015486818512" type="player">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -415,6 +583,16 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="746885747421801">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="848137905886370" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="16" name="Set Visible" sid="134456559987176" type="player">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="400857363674731">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="765939047707837" type="character">
@@ -441,15 +619,15 @@
                                     <sub-events>
                                         <event-block sid="551472082773185">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="488487737005133" type="Car">
-                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                <condition id="-7" name="Compare instance variable" sid="874328445706941" type="Car">
+                                                    <param id="0" name="Instance variable">InteractorID</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">-1</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
                                                 <action id="-10" name="Set value" sid="913388622332260" type="Car">
-                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                    <param id="0" name="Instance variable">InteractorID</param>
                                                     <param id="1" name="Value">character.id</param>
                                                 </action>
                                             </actions>
@@ -457,15 +635,18 @@
                                         <event-block sid="530983897118255">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="208155330223882" type="System" />
-                                                <condition id="-7" name="Compare instance variable" sid="329428257989357" type="Car">
-                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                <condition id="-7" name="Compare instance variable" sid="255305767727643" type="Car">
+                                                    <param id="0" name="Instance variable">InteractorID</param>
                                                     <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">msession.Value(0,&quot;id&quot;)</param>
+                                                    <param id="2" name="Value">character.id</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action behavior="Car" id="3" name="Set speed" sid="523392734853094" type="Car">
+                                                    <param id="0" name="Speed">0</param>
+                                                </action>
                                                 <action id="-10" name="Set value" sid="829451989380565" type="Car">
-                                                    <param id="0" name="Instance variable">DriverID</param>
+                                                    <param id="0" name="Instance variable">InteractorID</param>
                                                     <param id="1" name="Value">-1</param>
                                                 </action>
                                             </actions>
@@ -517,23 +698,93 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="406753232518056">
+                        <event-block sid="980672277805675">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="586078166232415" type="Car">
-                                    <param id="0" name="Instance variable">DriverID</param>
+                                <condition id="-7" name="Compare instance variable" sid="567958227408947" type="Car">
+                                    <param id="0" name="Instance variable">InteractorID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">character.id</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="20" name="Set Value" sid="293410543897230" type="characterstats">
+                                <action id="20" name="Set Value" sid="962158677633609" type="characterstats">
                                     <param id="0" name="Value">Car.ID</param>
                                     <param id="1" name="Reference point">0</param>
                                     <param id="2" name="Key {n}">&quot;vehicleID&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="406753232518056">
+                            <conditions />
+                            <actions>
+                                <action id="20" name="Set Value" sid="873551540730386" type="contentJSON">
+                                    <param id="0" name="Value">characterstats.AsJson(0)</param>
+                                    <param id="1" name="Reference point">0</param>
+                                    <param id="2" name="Key {n}">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
+                </event-block>
+                <comment>По моей задумке если InteractorID совпадает с нашим то его переменные полностью в наших руках и значения пакетов будут присваиваться только у остальных игроков</comment>
+                <event-block sid="548664964124495">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="464573374307690" type="System">
+                            <param id="0" name="Object">syncObjects</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="836201756229960" type="syncObjects">
+                            <param id="0" name="Instance variable">InteractorID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">msession.Value(0,&quot;id&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="20" name="Set Value" sid="607048590272735" type="syncobjectsJSON">
+                            <param id="0" name="Value">2</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;type&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="239082573436363" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.ID</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;ID&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="303029782076254" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.InteractorID</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;InteractorID&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="397295216152612" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.X</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;x&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="501638893219573" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.Y</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;y&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="446804679861638" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.Angle</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;angle&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="453385843561675" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.Width</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;width&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="202964455828097" type="syncobjectsJSON">
+                            <param id="0" name="Value">syncObjects.Height</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">&quot;height&quot;</param>
+                        </action>
+                        <action id="20" name="Set Value" sid="588189203357719" type="contentJSON">
+                            <param id="0" name="Value">syncobjectsJSON.AsJson(0)</param>
+                            <param id="1" name="Reference point">0</param>
+                            <param id="2" name="Key {n}">loopindex+1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="838175488733647">
                     <conditions />
@@ -544,7 +795,7 @@
                             <param id="2" name="Key {n}">&quot;type&quot;</param>
                         </action>
                         <action id="20" name="Set Value" sid="828131206669771" type="msend">
-                            <param id="0" name="Value">str(characterstats.AsJson(0))</param>
+                            <param id="0" name="Value">str(contentJSON.AsJson(0))</param>
                             <param id="1" name="Reference point">0</param>
                             <param id="2" name="Key {n}">&quot;content&quot;</param>
                         </action>
@@ -556,29 +807,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="747973131836183">
-            <conditions>
-                <condition id="-18" name="On created" sid="196886083140310" type="syncObjects" />
-            </conditions>
-            <actions>
-                <action id="1" name="Assign nickname" sid="838701068436760" type="Nickname">
-                    <param id="0" name="Nickname">syncObjects.NameOfType</param>
-                    <param id="1" name="Object">syncObjects</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="966165373915576">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="768895496226411" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Create instance" sid="299229094569857" type="Nickname">
-                    <param id="0" name="Nickname">&quot;Table&quot;</param>
-                    <param id="1" name="X">500</param>
-                    <param id="2" name="Y">500</param>
-                    <param id="3" name="Layer">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <comment>Кароче тут такой пиздец с этим констрактом что семейство синхронизируемых объектов я могу сделать и он будет синхронизировать объекты из семейства, если таковые существуют. Но ПОЯВЛЕНИЕ объекта у всех клиентов при синхронизации это полный пиздец ибо я не могу передать через пакет какой именно объект семейства создать. гораздо проще будет всё в одном спрайте наебенить. Но я на всякий случай оставлю реализацию синхронизации позиции и угла у семейства но при этом буду делать подтипы уже в виде спрайтов </comment>
     </events>
 </c2eventsheet>

@@ -21,7 +21,6 @@
         <plugin author="Scott A" id="Namespace" version="1">Namespace</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Comment" version="0.100000001">Comments</plugin>
-        <plugin author="Rex.Rainbow" id="Rex_Nickname" version="0.100000001">Nickname</plugin>
         <plugin author="Rex.Rainbow" id="Rex_TimeLine" version="1">TimeLine</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
@@ -58,7 +57,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">NW.js</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -694,10 +693,11 @@
                 <behavior-type name="Car" sid="589507193646181">
                     <behavior id="Car" />
                 </behavior-type>
-                <behavior-type name="LiteTween" sid="473700105248407">
-                    <behavior id="lunarray_LiteTween" />
-                </behavior-type>
             </behaviors>
+            <container>
+                <type>Car</type>
+                <type>car_</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451144102732009" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -720,8 +720,115 @@
         <object-type global="1" name="TimeLine" sid="548412564271932">
             <plugin id="Rex_TimeLine" />
         </object-type>
-        <object-type name="Nickname" sid="454683948221436">
-            <plugin id="Rex_Nickname" />
+        <object-type name="car_" sid="220178390664273">
+            <plugin id="Sprite" />
+            <container>
+                <type>Car</type>
+                <type>car_</type>
+            </container>
+            <animation-folder>
+                <animation framecount="90" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313827440325081" speed="18">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0030.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0031.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0032.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0033.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0034.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0035.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0036.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0037.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0038.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0039.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0040.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0041.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0042.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0043.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0044.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0045.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0046.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0047.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0048.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0049.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0050.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0051.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0052.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0053.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0054.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0055.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0056.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0057.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0058.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0059.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0060.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0061.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0062.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0063.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0064.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0065.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0066.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0067.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0068.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0069.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0070.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0071.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0072.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0073.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0074.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0075.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0076.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0077.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0078.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0079.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0080.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0081.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0082.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0083.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0084.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0085.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0086.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0087.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0088.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0089.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0090.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="contentJSON" sid="125989582880263">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type global="1" name="syncobjectsJSON" sid="754797275977284">
+            <plugin id="JSON" />
+        </object-type>
+        <object-type global="1" name="JSON" sid="982568425959792">
+            <plugin id="JSON" />
         </object-type>
     </object-folder>
     <families>
@@ -750,7 +857,16 @@
             <instance-variables>
                 <instance-variable name="ID" sid="867094069814937" type="number" />
                 <instance-variable name="NameOfType" sid="868231142431328" type="string" />
+                <instance-variable comment="Номер игрока кто посмел взаимодействовать с объектом, обобщение и замена DriverID у Car. Впринципе можно название заменить на OwnerID но я не буду" name="InteractorID" sid="798836185959873" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="LiteTween_POS" sid="341454890512332">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween_ANGLE" sid="669555925082912">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
         </family>
     </families>
     <layout-folder>
@@ -772,7 +888,6 @@
         <global-instance type="WebSocket" uid="6" />
         <global-instance type="MagiCam" uid="29" />
         <global-instance type="Comments" uid="34" />
-        <global-instance type="Nickname" uid="36" />
     </global-instances>
     <sounds-folder />
     <music-folder />
