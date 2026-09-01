@@ -413,7 +413,11 @@
                     <param id="2" name="Value">msession.Value(0,&quot;id&quot;)</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-8" name="Scroll to object" sid="698355147267521" type="System">
+                    <param id="0" name="Object">character</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="687432219296566">
                     <conditions>
