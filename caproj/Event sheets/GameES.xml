@@ -401,7 +401,7 @@
                     <param id="0" name="Comment">&quot;Тут формула ебанутая достаточно но по факту ничег сложного, я сделал так чтобы градус был в диапозоне 0;360 а не -180;180 например. Карче чтобы потом подобрать соответсвующий кадр анимации. Умножение на минус единицу происходит потому что я еблан и в обратном порядке зарендерил.&quot;</param>
                 </action>
                 <action id="5" name="Set frame" sid="714398455321929" type="car_">
-                    <param id="0" name="Frame number">round(( (Car.Angle + 360) % 360 ) / (360 / car_.AnimationFrameCount))</param>
+                    <param id="0" name="Frame number">floor(( (Car.Car.MovingAngle + 360) % 360 ) / (360 / (car_.AnimationFrameCount-1)))</param>
                 </action>
             </actions>
         </event-block>

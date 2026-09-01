@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="651239931905406">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="558774384667973" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="306968693434002" type="car_">
+                    <param id="0" name="Frame number">SliderBar.Value</param>
+                </action>
+                <action id="-8" name="Set angle" sid="567473868219427" type="Car">
+                    <param id="0" name="Angle">SliderBar2.Value</param>
+                </action>
+                <action id="0" name="Set text" sid="722368770983134" type="Text">
+                    <param id="0" name="Text">&quot;3D:&quot;&amp;car_.AnimationFrame&amp;&quot;&#x0D;&#x0A;&quot;&amp;&quot;angle:&quot;&amp;Car.Angle</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
