@@ -340,7 +340,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="353787765063748">
+                <event-block disabled="1" sid="353787765063748">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="868867201873057" type="System">
                             <param id="0" name="First value">mrecieve.Value(0, &quot;content&quot;)</param>
@@ -812,5 +812,25 @@
             </sub-events>
         </event-block>
         <comment>Кароче тут такой пиздец с этим констрактом что семейство синхронизируемых объектов я могу сделать и он будет синхронизировать объекты из семейства, если таковые существуют. Но ПОЯВЛЕНИЕ объекта у всех клиентов при синхронизации это полный пиздец ибо я не могу передать через пакет какой именно объект семейства создать. гораздо проще будет всё в одном спрайте наебенить. Но я на всякий случай оставлю реализацию синхронизации позиции и угла у семейства но при этом буду делать подтипы уже в виде спрайтов </comment>
+        <event-block sid="242296214949769">
+            <conditions />
+            <actions>
+                <action id="0" name="Sort all Objects in layer by Y" sid="121379168424751" type="ZSorter">
+                    <param id="0" name="Layer">&quot;world&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="183198090067450">
+            <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="535102990391513" type="System">
+                    <param id="0" name="Object">Family1</param>
+                    <param id="1" name="Expression">Family1.Y</param>
+                    <param id="2" name="Order">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Move to bottom" sid="745753151899906" type="Family1" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

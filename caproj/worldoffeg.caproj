@@ -22,10 +22,12 @@
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Comment" version="0.100000001">Comments</plugin>
         <plugin author="Rex.Rainbow" id="Rex_TimeLine" version="1">TimeLine</plugin>
+        <plugin author="Juan Pablo Tarquino" id="Rex_ZSorter" version="1">Z Sorter</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Gigatron" id="c2fpsmonitor" version="1">Fps Monitor</plugin>
         <plugin author="JohnnySheffield" id="nwk" version="1.100000024">Node-Webkit Gui</plugin>
         <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
@@ -59,7 +61,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -681,7 +683,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="148907262492986" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.967742">
+                        <collision-poly>
+                            <point x="0" y="0.346774" />
+                            <point x="1" y="0.334677" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -730,186 +739,1446 @@
             </container>
             <animation-folder>
                 <animation framecount="180" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313827440325081" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0013.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0014.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0015.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0016.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0017.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0018.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0019.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0020.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0021.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0022.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0023.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0024.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0025.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0026.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0027.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0028.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0029.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0030.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0031.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0032.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0033.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0034.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0035.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0036.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0037.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0038.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0039.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0040.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0041.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0042.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0043.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0044.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0045.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0046.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0047.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0048.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0049.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0050.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0051.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0052.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0053.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0054.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0055.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0056.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0057.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0058.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0059.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0060.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0061.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0062.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0063.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0064.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0065.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0066.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0067.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0068.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0069.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0070.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0071.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0072.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0073.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0074.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0075.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0076.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0077.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0078.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0079.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0080.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0081.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0082.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0083.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0084.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0085.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0086.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0087.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0088.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0089.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0090.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0091.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0092.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0093.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0094.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0095.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0096.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0097.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0098.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0099.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0100.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0101.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0102.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0103.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0104.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0105.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0106.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0107.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0108.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0109.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0110.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0111.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0112.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0113.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0114.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0115.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0116.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0117.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0118.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0119.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0120.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0121.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0122.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0123.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0124.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0125.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0126.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0127.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0128.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0129.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0130.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0131.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0132.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0133.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0134.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0135.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0136.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0137.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0138.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0139.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0140.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0141.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0142.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0143.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0144.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0145.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0146.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0147.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0148.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0149.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0150.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0151.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0152.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0153.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0154.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0155.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0156.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0157.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0158.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0159.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0160.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0161.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0162.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0163.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0164.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0165.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0166.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0167.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0168.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0169.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0170.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0171.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0172.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0173.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0174.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0175.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0176.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0177.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0178.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0179.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0180.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0001.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0002.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0003.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0004.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0005.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0006.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0007.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0008.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0009.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0010.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0011.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0012.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0013.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0014.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0015.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0016.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0017.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0018.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0019.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0020.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0021.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0022.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0023.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0024.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0025.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0026.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0027.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0028.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0029.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0030.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0031.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0032.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0033.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0034.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0035.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0036.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0037.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0038.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0039.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0040.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0041.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0042.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0043.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0044.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0045.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0046.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0047.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0048.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0049.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0050.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0051.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0052.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0053.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0054.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0055.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0056.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0057.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0058.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0059.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0060.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0061.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0062.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0063.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0064.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0065.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0066.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0067.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0068.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0069.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0070.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0071.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0072.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0073.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0074.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0075.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0076.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0077.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0078.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0079.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0080.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0081.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0082.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0083.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0084.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0085.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0086.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0087.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0088.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0089.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0090.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0091.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0092.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0093.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0094.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0095.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0096.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0097.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0098.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0099.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0100.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0101.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0102.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0103.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0104.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0105.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0106.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0107.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0108.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0109.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0110.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0111.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0112.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0113.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0114.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0115.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0116.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0117.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0118.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0119.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0120.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0121.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0122.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0123.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0124.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0125.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0126.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0127.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0128.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0129.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0130.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0131.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0132.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0133.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0134.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0135.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0136.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0137.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0138.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0139.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0140.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0141.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0142.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0143.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0144.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0145.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0146.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0147.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0148.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0149.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0150.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0151.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0152.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0153.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0154.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0155.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0156.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0157.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0158.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0159.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0160.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0161.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0162.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0163.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0164.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0165.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0166.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0167.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0168.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0169.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0170.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0171.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0172.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0173.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0174.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0175.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0176.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0177.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0178.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0179.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LomarOsosev\Documents\Projects\worldofegcraft\sprites\car\car_0180.png">
+                        <collision-poly>
+                            <point x="0.345703" y="0.326172" />
+                            <point x="0.632813" y="0.324219" />
+                            <point x="0.628906" y="0.570313" />
+                            <point x="0.339844" y="0.5625" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -934,6 +2203,12 @@
         </object-type>
         <object-type name="SliderBar2" sid="256854782265958">
             <plugin id="sliderbar" />
+        </object-type>
+        <object-type global="1" name="ZSorter" sid="359414303063388">
+            <plugin id="Rex_ZSorter" />
+        </object-type>
+        <object-type name="FpsMonitor" sid="985958094695457">
+            <plugin id="c2fpsmonitor" />
         </object-type>
     </object-folder>
     <families>
@@ -973,6 +2248,13 @@
                 </behavior-type>
             </behaviors>
         </family>
+        <family name="Family1" plugin-id="Sprite" sid="362856025118521">
+            <members>
+                <member>car_</member>
+                <member>character</member>
+                <member>Sprite</member>
+            </members>
+        </family>
     </families>
     <layout-folder>
         <layout>loading.xml</layout>
@@ -995,6 +2277,7 @@
         <global-instance type="WebSocket" uid="6" />
         <global-instance type="MagiCam" uid="29" />
         <global-instance type="Comments" uid="34" />
+        <global-instance type="FpsMonitor" uid="635" />
     </global-instances>
     <sounds-folder />
     <music-folder />

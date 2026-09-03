@@ -28,6 +28,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1">
         <family expanded="0" name="playerFamily" />
         <family expanded="1" name="syncObjects" />
+        <family expanded="0" name="Family1" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
