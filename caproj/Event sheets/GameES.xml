@@ -46,7 +46,7 @@
                 <condition id="3" name="On message" sid="929386791109190" type="WebSocket" />
             </conditions>
             <actions>
-                <action id="14" name="Log" sid="805224995224342" type="Browser">
+                <action disabled="1" id="14" name="Log" sid="805224995224342" type="Browser">
                     <param id="0" name="Type">0</param>
                     <param id="1" name="Message">WebSocket.MessageText</param>
                 </action>
@@ -126,6 +126,8 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>broadcastToRoom(тип пакета joined) шлет пакет всем, включая самого новичка, из-за чего&#x0A; клиент может ошибочно пытаться отправить toclient на свой собственный ID. Что и создавало раздвоение игрока&#x0A;</comment>
+                <comment>первоход заходит в хату</comment>
                 <event-block sid="375396984530548">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="202174553452800" type="System">
@@ -145,29 +147,111 @@
                             <param id="0" name="Instance variable">id</param>
                             <param id="1" name="Value">mrecieve.Value(0, &quot;id&quot;)</param>
                         </action>
-                        <action id="20" name="Set Value" sid="509248575859037" type="characterstats">
-                            <param id="0" name="Value">1</param>
-                            <param id="1" name="Reference point">0</param>
-                            <param id="2" name="Key {n}">&quot;type&quot;</param>
+                    </actions>
+                    <sub-events>
+                        <comment>малява первоходу об авторитетах</comment>
+                        <event-block sid="725169344854768">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="734059330842442" type="System">
+                                    <param id="0" name="First value">mrecieve.Value(0, &quot;id&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">msession.Value(0,&quot;id&quot;)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set New Object" sid="434384422716843" type="JSON">
+                                    <param id="0" name="Reference point">0</param>
+                                    <param id="1" name="Key {n}"></param>
+                                </action>
+                                <action id="20" name="Set Value" sid="509248575859037" type="characterstats">
+                                    <param id="0" name="Value">1</param>
+                                    <param id="1" name="Reference point">0</param>
+                                    <param id="2" name="Key {n}">&quot;type&quot;</param>
+                                </action>
+                                <action id="20" name="Set Value" sid="244399911550037" type="msend">
+                                    <param id="0" name="Value">&quot;toclient&quot;</param>
+                                    <param id="1" name="Reference point">0</param>
+                                    <param id="2" name="Key {n}">&quot;type&quot;</param>
+                                </action>
+                                <action id="20" name="Set Value" sid="424671095871367" type="msend">
+                                    <param id="0" name="Value">mrecieve.Value(0, &quot;id&quot;)</param>
+                                    <param id="1" name="Reference point">0</param>
+                                    <param id="2" name="Key {n}">&quot;targetId&quot;</param>
+                                </action>
+                                <action id="20" name="Set Value" sid="698526545419038" type="JSON">
+                                    <param id="0" name="Value">&quot;spawnjoined&quot;</param>
+                                    <param id="1" name="Reference point">0</param>
+                                    <param id="2" name="Key {n}">&quot;type&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>Бля я готов хуй отсосать создателю плагина InstanceBank</comment>
+                                <event-block sid="139516888150190">
+                                    <conditions />
+                                    <actions>
+                                        <action id="20" name="Set Value" sid="739092872333717" type="msend">
+                                            <param id="0" name="Value">JSON.AsJson(0)</param>
+                                            <param id="1" name="Reference point">0</param>
+                                            <param id="2" name="Key {n}">&quot;content&quot;</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="456920034390522" type="Browser">
+                                            <param id="0" name="Type">2</param>
+                                            <param id="1" name="Message">msend.Value(0, &quot;content&quot;)</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="225498491589452" type="multiplayer">
+                                            <param id="0" name="Name">&quot;send&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="656493028722189">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="516147662443830" type="syncObjects">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">msession.Value(0,&quot;id&quot;)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Clean bank" sid="656254705801703" type="InstanceBank" />
+                                        <action id="1" name="Save instances" sid="994238552986377" type="InstanceBank">
+                                            <param id="0" name="Object">syncObjects</param>
+                                            <param id="1" name="All instances">0</param>
+                                        </action>
+                                        <action id="20" name="Set Value" sid="917066181589558" type="contentJSON">
+                                            <param id="0" name="Value">InstanceBank.BankToString</param>
+                                            <param id="1" name="Reference point">0</param>
+                                            <param id="2" name="Key {n}">&quot;content&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>первоход получает информацию о сидельцах в хате</comment>
+                <event-block sid="353787765063748">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="868867201873057" type="System">
+                            <param id="0" name="First value">mjson.Value(0, &quot;type&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;spawnjoined&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="437624336893798" type="System">
+                            <param id="0" name="Object to create">player</param>
+                            <param id="1" name="Layer">&quot;world&quot;</param>
+                            <param id="2" name="X">500</param>
+                            <param id="3" name="Y">500</param>
                         </action>
-                        <action id="20" name="Set Value" sid="244399911550037" type="msend">
-                            <param id="0" name="Value">&quot;toclient&quot;</param>
-                            <param id="1" name="Reference point">0</param>
-                            <param id="2" name="Key {n}">&quot;type&quot;</param>
+                        <action id="-10" name="Set value" sid="512661381975131" type="character">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Value">mrecieve.Value(0, &quot;from&quot;)</param>
                         </action>
-                        <action id="20" name="Set Value" sid="424671095871367" type="msend">
-                            <param id="0" name="Value">mrecieve.Value(0, &quot;id&quot;)</param>
-                            <param id="1" name="Reference point">0</param>
-                            <param id="2" name="Key {n}">&quot;targetId&quot;</param>
-                        </action>
-                        <action id="20" name="Set Value" sid="211039322207720" type="msend">
-                            <param id="0" name="Value">&quot;joined&quot;</param>
-                            <param id="1" name="Reference point">0</param>
-                            <param id="2" name="Key {n}">&quot;content&quot;</param>
-                        </action>
-                        <action id="0" name="Call function" sid="228826694716594" type="multiplayer">
-                            <param id="0" name="Name">&quot;send&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                        <action id="14" name="Log" sid="893838574914325" type="Browser">
+                            <param id="0" name="Type">2</param>
+                            <param id="1" name="Message">&quot;Ну и хуй&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -291,6 +375,9 @@
                                                             <param id="1" name="Comparison">0</param>
                                                             <param id="2" name="Value">JSON.Value(0, &quot;ID&quot;)</param>
                                                         </condition>
+                                                        <condition id="-11" name="For Each" sid="435287286949598" type="System">
+                                                            <param id="0" name="Object">syncObjects</param>
+                                                        </condition>
                                                     </conditions>
                                                     <actions>
                                                         <action disabled="1" id="-3" name="Set position" sid="224175935962535" type="character">
@@ -340,26 +427,23 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="353787765063748">
+                <event-block sid="329112923843117">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="868867201873057" type="System">
-                            <param id="0" name="First value">mrecieve.Value(0, &quot;content&quot;)</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;joined&quot;</param>
-                        </condition>
+                        <condition id="-22" name="Else" sid="469577528405575" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="437624336893798" type="System">
-                            <param id="0" name="Object to create">player</param>
-                            <param id="1" name="Layer">&quot;world&quot;</param>
-                            <param id="2" name="X">500</param>
-                            <param id="3" name="Y">500</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="512661381975131" type="character">
-                            <param id="0" name="Instance variable">id</param>
-                            <param id="1" name="Value">mrecieve.Value(0, &quot;from&quot;)</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="606415113203892">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="103476820340948" type="System">
+                                    <param id="0" name="First value">mjson.Value(0,&quot;type&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;syncspawn&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -371,14 +455,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="14" name="Log" sid="622232734807774" type="Browser">
-                    <param id="0" name="Type">0</param>
-                    <param id="1" name="Message">msend.AsJson(0)</param>
-                </action>
                 <action id="2" name="Send text" sid="550883524772372" type="WebSocket">
                     <param id="0" name="Data">msend.AsJson(0)</param>
                 </action>
                 <action id="55" name="Clear" sid="894998126323589" type="contentJSON">
+                    <param id="0" name="Reference point">0</param>
+                    <param id="1" name="Key {n}"></param>
+                </action>
+                <action id="55" name="Clear" sid="956886087378904" type="msend">
                     <param id="0" name="Reference point">0</param>
                     <param id="1" name="Key {n}"></param>
                 </action>
@@ -393,15 +477,12 @@
                     <param id="0" name="X">character.X</param>
                     <param id="1" name="Y">character.Y</param>
                 </action>
+                <action id="5" name="Set frame" sid="714398455321929" type="car_">
+                    <param id="0" name="Frame number">floor(( (Car.Angle + 360) % 360 ) / (360 / (car_.AnimationFrameCount-1)))</param>
+                </action>
                 <action id="-4" name="Set position to another object" sid="101466221029851" type="car_">
                     <param id="0" name="Object">Car</param>
                     <param id="1" name="Image point (optional)">0</param>
-                </action>
-                <action id="1" name="Add comment" sid="313949954643510" type="Comments">
-                    <param id="0" name="Comment">&quot;Тут формула ебанутая достаточно но по факту ничег сложного, я сделал так чтобы градус был в диапозоне 0;360 а не -180;180 например. Карче чтобы потом подобрать соответсвующий кадр анимации. Умножение на минус единицу происходит потому что я еблан и в обратном порядке зарендерил.&quot;</param>
-                </action>
-                <action id="5" name="Set frame" sid="714398455321929" type="car_">
-                    <param id="0" name="Frame number">floor(( (Car.Car.MovingAngle + 360) % 360 ) / (360 / (car_.AnimationFrameCount-1)))</param>
                 </action>
             </actions>
         </event-block>

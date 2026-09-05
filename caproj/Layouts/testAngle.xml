@@ -37,7 +37,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <ID>1</ID>
+                        <ID>-1</ID>
                         <NameOfType>Car</NameOfType>
                         <InteractorID>-1</InteractorID>
                         <DriverID>-1</DriverID>
@@ -112,7 +112,7 @@
                         <height>611.350952148</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.484375</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

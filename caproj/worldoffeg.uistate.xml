@@ -11,13 +11,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">loading</layout>
-        <layout active="1" order="2">Game</layout>
+        <layout order="2">Game</layout>
         <layout order="5">spritebank</layout>
         <layout order="6">testAngle</layout>
         <event-sheet order="1">loadingES</event-sheet>
-        <event-sheet order="3">GameES</event-sheet>
+        <event-sheet active="1" order="3">GameES</event-sheet>
         <event-sheet order="4">spriter</event-sheet>
         <event-sheet order="7">Event sheet 1</event-sheet>
+        <event-sheet order="8">spritebankES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -57,7 +58,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LoadingBack/" />
         <folder expanded="1" path="animation-folder/player/" />
         <folder expanded="1" path="animation-folder/character/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Table/" />
         <folder expanded="1" path="animation-folder/Car/" />
         <folder expanded="1" path="animation-folder/systemm/" />
         <folder expanded="1" path="animation-folder/car_/" />

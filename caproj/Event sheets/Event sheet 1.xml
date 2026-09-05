@@ -19,5 +19,13 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="412095660710902">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="828261650174939" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Load all instances" sid="398311582153830" type="InstanceBank" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
